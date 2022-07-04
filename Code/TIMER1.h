@@ -1,9 +1,3 @@
-/*
- * TIMER1.h
- *
- *  Created on: ??þ/??þ/????
- *      Author: eng Ahmed
- */
 
 #ifndef TIMER1_H_
 #define TIMER1_H_

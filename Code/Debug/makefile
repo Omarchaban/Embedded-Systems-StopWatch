@@ -32,6 +32,9 @@ endif
 LSS += \
 Stopwatch.lss \
 
+FLASH_IMAGE += \
+Stopwatch.hex \
+
 SIZEDUMMY += \
 sizedummy \
 
@@ -53,6 +56,12 @@ Stopwatch.lss: Stopwatch.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
+Stopwatch.hex: Stopwatch.elf
+	@echo 'Create Flash image (ihex format)'
+	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Stopwatch.elf  "Stopwatch.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 sizedummy: Stopwatch.elf
 	@echo 'Invoking: Print Size'
 	-avr-size --format=avr --mcu=atmega16 Stopwatch.elf
@@ -61,10 +70,10 @@ sizedummy: Stopwatch.elf
 
 # Other Targets
 clean:
-	-$(RM) $(ELFS)$(OBJS)$(ASM_DEPS)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) Stopwatch.elf
+	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) Stopwatch.elf
 	-@echo ' '
 
-secondary-outputs: $(LSS) $(SIZEDUMMY)
+secondary-outputs: $(LSS) $(FLASH_IMAGE) $(SIZEDUMMY)
 
 .PHONY: all clean dependents
 .SECONDARY:

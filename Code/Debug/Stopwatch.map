@@ -435,9 +435,9 @@ LOAD e:/imt/imt_sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.
  .stab          0x0000081c      0xa50 ./main.o
                                 0xac8 (size before relaxing)
 
-.stabstr        0x00000000      0x8ed
+.stabstr        0x00000000      0x8e5
  *(.stabstr)
- .stabstr       0x00000000      0x8ed ./DIO.o
+ .stabstr       0x00000000      0x8e5 ./DIO.o
 
 .stab.excl
  *(.stab.excl)

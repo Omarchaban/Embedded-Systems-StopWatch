@@ -1,10 +1,9 @@
-DIO.o DIO.o: ../DIO.c ../interace.h ../../STD_TYPES.h ../../BIT_MATH.h \
-  ../DIO_reg2.h
+DIO.o DIO.o: ../DIO.c ../DIO.h ../STD_TYPES.h ../BIT_MATH.h ../DIO_reg2.h
 
-../interace.h:
+../DIO.h:
 
-../../STD_TYPES.h:
+../STD_TYPES.h:
 
-../../BIT_MATH.h:
+../BIT_MATH.h:
 
 ../DIO_reg2.h:

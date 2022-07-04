@@ -1,13 +1,9 @@
-/*
- * interace.h
- *
- *  Created on: ??þ/??þ/????
- *      Author: eng Ahmed
- */
 
 #ifndef DIO_H_
 #define DIO_H_
+
 #include "STD_TYPES.h"
+
 #define DIO_PORTA    0
 #define DIO_PORTB    1
 #define DIO_PORTC    2

@@ -1,9 +1,3 @@
-/*
- * EXTI.c
- *
- *  Created on: ??þ/??þ/????
- *      Author: eng Ahmed
- */
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 

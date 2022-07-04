@@ -1,9 +1,3 @@
-/*
- * EXTI.h
- *
- *  Created on: ??þ/??þ/????
- *      Author: eng Ahmed
- */
 
 #ifndef EXTI_H_
 #define EXTI_H_

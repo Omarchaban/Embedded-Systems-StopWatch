@@ -1,9 +1,4 @@
-/*
- * DIO_reg2.h
- *
- *  Created on: ??þ/??þ/????
- *      Author: eng Ahmed
- */
+
 
 #ifndef DIO_REG2_H_
 #define DIO_REG2_H_

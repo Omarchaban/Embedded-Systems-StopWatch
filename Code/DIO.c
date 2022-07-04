@@ -1,9 +1,3 @@
-/*
- * program2.c
- *
- *  Created on: ??þ/??þ/????
- *      Author: eng Ahmed
- */
 
 
 #include "DIO.h"
